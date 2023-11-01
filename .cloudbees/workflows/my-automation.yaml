@@ -5,12 +5,14 @@ on:
   push:
     branches:
       - "**"
+      - master
 jobs:
   build:
     environment: Preproduction
     steps:
-      - uses: docker://golang:1.20.3-alpine3.17
+      - uses: github-springnine
         name: Say hello
+        kind: build
         shell: sh
         run: |
           echo "hello world"
