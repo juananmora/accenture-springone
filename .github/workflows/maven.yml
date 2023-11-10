@@ -33,7 +33,7 @@ jobs:
       run: echo Build Image   
 
   deploydev:
-    needs: [mend-sast, mend-cli]
+    needs: mend-sast
     runs-on: ubuntu-latest
     steps:
       - name: Deploy Development
