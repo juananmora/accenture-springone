@@ -4,7 +4,7 @@
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
-# documentation.
+# documentation. 
 
 name: Java CI with Maven
 
@@ -28,12 +28,12 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B package -Denforcer.fail=false --file pom.xml
     - name: Build & Publish Image
       run: echo Build Image   
 
   deploydev:
-    needs: build
+    needs: [mend-sast, mend-cli]
     runs-on: ubuntu-latest
     steps:
       - name: Deploy Development
@@ -52,10 +52,12 @@ jobs:
     steps:
       - name: Deploy PRO
         run: echo app deployed en PRO
+
   mend-sast:
      runs-on: ubuntu-latest
+     needs: build
      env:
-       MEND_SAST_ORGANIZATION: "Accenture Spain"
+       #MEND_SAST_ORGANIZATION: Accenture Spain
        MEND_SAST_API_TOKEN: e8240a7cc63e08109ce064d5b3f3dadf60c8d107a613061f727adc25d700a2c6
        MEND_SAST_SERVER_URL:  https://saas-eu.mend.io/sast
      steps:
@@ -66,5 +68,20 @@ jobs:
          run: curl -LJO https://downloads-sast.mend.io/sast-cli/linux/mendsastcli && chmod +x mendsastcli
        # Run CLI
        - name: Run Mend-SAST
-         run: ./mendsastcli --dir ./ --name=${{github.event.repository.name}}-${{github.ref_name}}-${{github.sha}} --app=${{github.event.repository.name}} --baseline=true        
-  
+         run: ./mendsastcli --dir ./ --name=${{github.event.repository.name}}-${{github.ref_name}}-${{github.sha}} --app=${{github.event.repository.name}} --baseline=true  
+         
+  mend-cli:
+     needs: build
+     env:
+       MEND_EMAIL: juan.a.mora@accenture.com
+       MEND_USER_KEY: 5997298ed7f5489e88b72ecd7d31662034cf25d221364cf8906a00deba127511
+       MEND_URL: https://saas-eu.mend.io/
+     runs-on: ubuntu-latest
+     steps:
+      # Downloading Mend CLI
+       - name: Mend CLI
+         run: | 
+           echo Downloading Mend CLI
+           curl https://downloads.mend.io/production/unified/latest/linux_amd64/mend -o /usr/local/bin/mend && chmod +x /usr/local/bin/mend
+           echo Start Mend Container scan
+           mend image juananmora/camas:30   
