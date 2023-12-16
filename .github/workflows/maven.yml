@@ -33,7 +33,11 @@ jobs:
       run: echo Build Image   
 
   deploydev:
+<<<<<<< HEAD
     needs: [mend-sast, mend-cli]
+=======
+    needs: mend-sast
+>>>>>>> origin/master
     runs-on: ubuntu-latest
     steps:
       - name: Deploy Development
@@ -69,6 +73,7 @@ jobs:
        # Run CLI
        - name: Run Mend-SAST
          run: ./mendsastcli --dir ./ --name=${{github.event.repository.name}}-${{github.ref_name}}-${{github.sha}} --app=${{github.event.repository.name}} --baseline=true  
+<<<<<<< HEAD
          
   mend-cli:
      needs: build
@@ -85,3 +90,6 @@ jobs:
            curl https://downloads.mend.io/production/unified/latest/linux_amd64/mend -o /usr/local/bin/mend && chmod +x /usr/local/bin/mend
            echo Start Mend Container scan
            mend image juananmora/camas:30   
+=======
+ 
+>>>>>>> origin/master
