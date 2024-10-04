@@ -2,7 +2,7 @@
   "application": {
     "name": "ESAB_COPRS",
     "version": "1.0.0",
-    "project": "Default",
+    "project": "Sabadell",
     "mode": "SERIAL",
     "components": {
       "component": [
