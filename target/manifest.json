@@ -25,7 +25,7 @@
           "tier": "COPRS",
           "artifact": {
             "artifactName": "com.accenture:client",
-            "artifactVersion": "1.0.2",
+            "artifactVersion": "1.0.2"
           }
         },
         {
