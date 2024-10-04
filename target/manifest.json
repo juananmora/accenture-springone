@@ -11,12 +11,8 @@
           "description": "This is tomcat component",
           "tier": "COPRS",
           "artifact": {
-            "artifactType": "TOMCAT",
             "artifactName": "com.accenture:list",
             "artifactVersion": "1.0.1",
-            "sourceDirectory": "/target",
-            "artifactFileName": "accenture-springone.jar",
-            "contextPath": "myapp"
           }
         },
         {
