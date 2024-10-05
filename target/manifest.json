@@ -1,8 +1,8 @@
 {
   "application": {
     "name": "ESAB_COPRS",
-    "version": "1.0.14",
-    "project": "Sabadell",
+    "version": "1.0.15",
+    "project": "CTTI",
     "mode": "SERIAL",
     "components": {
       "component": [
