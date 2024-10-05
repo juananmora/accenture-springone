@@ -1,7 +1,7 @@
 {
   "application": {
     "name": "ESAB_COPRS",
-    "version": "1.0.15",
+    "version": "1.0.16",
     "project": "CTTI",
     "mode": "SERIAL",
     "components": {
@@ -20,7 +20,7 @@
           }
         },
         {
-          "name": "tomcat2",
+          "name": "tomcat",
           "description": "This is tomcat component",
           "tier": "COPRS",
           "artifact": {
@@ -28,7 +28,8 @@
             "artifactName": "com.accenture:list",
             "artifactVersion": "2.0.2",
             "artifactFileName": "accenture-springone.jar",
-            "sourceDirectory": "/target"
+            "sourceDirectory": "/target",
+            "contextPath": "myapp"
           }
         },
         {
