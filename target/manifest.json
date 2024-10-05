@@ -1,7 +1,7 @@
 {
   "application": {
     "name": "ESAB_COPRS",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "project": "Sabadell",
     "mode": "SERIAL",
     "components": {
@@ -24,9 +24,10 @@
           "description": "This is tomcat component",
           "tier": "COPRS",
           "artifact": {
-            "artifactType": "EC-Artifact",
+            "artifactType": "DEFAULT",
             "artifactName": "com.accenture:list",
-            "artifactVersion": "2.0.1"
+            "artifactVersion": "2.0.2",
+            "sourceDirectory": "/target",
           }
         },
         {
