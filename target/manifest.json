@@ -1,7 +1,7 @@
 {
   "application": {
     "name": "ESAB_COPRS",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "project": "Sabadell",
     "mode": "PARALLEL",
     "components": {
