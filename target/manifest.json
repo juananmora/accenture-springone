@@ -1,7 +1,7 @@
 {
   "application": {
     "name": "ESAB_COPRS",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "project": "Sabadell",
     "mode": "PARALLEL",
     "components": {
@@ -35,16 +35,14 @@
           }
         },
         {
-          "name": "tomcat",
+          "name": "tomcat2",
           "description": "Non-master component using Artifact Management",
           "tier": "AppTier2",
-          "artifact": {
-            "artifactType": "DEFAULT", 
+          "file": {
             "artifactName": "com.accenture:secondaryapp",
             "artifactVersion": "1.0.0"
           },
           "properties": {
-            "isMasterComponent": "false",
             "typeApp": "zip"
           }
         }
