@@ -1,19 +1,19 @@
 {
   "application": {
     "name": "ESAB_COPRS",
-    "version": "1.0.25",
+    "version": "9.0.0",
     "project": "Sabadell",
     "mode": "PARALLEL",
     "components": {
       "component": [
         {
-          "name": "jboss",
+          "name": "CLOUDBEES-CDRO",
           "description": "This is tomcat component",
-          "tier": "COPRS",
+          "tier": "tomcat",
           "artifact": {
             "artifactType": "TOMCAT",
             "artifactName": "com.accenture:list",
-            "artifactVersion": "7.0.8",
+            "artifactVersion": "9.0.0",
             "sourceDirectory": "/target",
             "artifactFileName": "manifest.json",
             "tomcatConfig" : "config1",
@@ -25,13 +25,13 @@
           }
         },
         {
-          "name": "jboss-2",
+          "name": "CLOUDBEES-CDRO-2",
           "description": "This is tomcat component",
-          "tier": "COPRS-2",
+          "tier": "tomcat-2",
           "artifact": {
             "artifactType": "TOMCAT",
             "artifactName": "com.accenture:client",
-            "artifactVersion": "7.0.8",
+            "artifactVersion": "9.0.0",
             "sourceDirectory": "/target",
             "artifactFileName": "manifest.json",
             "tomcatConfig" : "config1",
