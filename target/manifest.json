@@ -33,6 +33,17 @@
           }
         }
       ]
+    },
+    "environments" : {
+      "environment" : [
+        {
+          "name": "Prod",
+          "project": "Sabadell",
+          "tierMap": {
+            "COPRS": "COPRS"
+          }
+        }
+      ]
     }
   }
 }
