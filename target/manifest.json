@@ -35,7 +35,7 @@
           }
         },
         {
-          "name": "SecondaryComponent",
+          "name": "tomcat",
           "description": "Non-master component using Artifact Management",
           "tier": "AppTier2",
           "artifact": {
@@ -44,7 +44,8 @@
             "artifactVersion": "1.0.0"
           },
           "properties": {
-            "isMasterComponent": "false" 
+            "isMasterComponent": "false",
+            "typeApp": "zip"
           }
         }
       ]
