@@ -20,7 +20,7 @@
           }
         },
         {
-          "name": "generic-1",
+          "name": "generic",
           "description": "This is tomcat component",
           "tier": "COPRS-3",
           "artifact": {
