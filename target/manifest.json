@@ -33,6 +33,19 @@
             "tomcatConfig" : "config1",
             "contextPath": "myapp"
           }
+        },
+        {
+          "name": "SecondaryComponent",
+          "description": "Non-master component using Artifact Management",
+          "tier": "AppTier2",
+          "artifact": {
+            "artifactType": "DEFAULT", 
+            "artifactName": "com.accenture:secondaryapp",
+            "artifactVersion": "1.0.0"
+          },
+          "properties": {
+            "isMasterComponent": "false" 
+          }
         }
       ]
     }
