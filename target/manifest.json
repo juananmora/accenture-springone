@@ -24,7 +24,7 @@
           "description": "This is tomcat component",
           "tier": "COPRS",
           "artifact": {
-            "artifactType": "DEFAULT",
+            "artifactType": "EC-Artifact",
             "artifactName": "com.accenture:list",
             "artifactVersion": "2.0.2",
             "artifactFileName": "accenture-springone.jar",
