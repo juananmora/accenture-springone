@@ -1,7 +1,7 @@
 {
   "application": {
     "name": "ESAB_COPRS",
-    "version": "1.0.11",
+    "version": "1.0.12",
     "project": "Sabadell",
     "mode": "PARALLEL",
     "components": {
@@ -38,9 +38,11 @@
           "name": "tomcat2",
           "description": "Non-master component using Artifact Management",
           "tier": "AppTier2",
-          "file": {
+          "artifact": {
             "artifactName": "com.accenture:secondaryapp",
-            "artifactVersion": "1.0.0"
+            "artifactVersion": "1.0.1",
+            "sourceDirectory": "/target",
+            "artifactFileName": "accenture-springone.jar",
           },
           "properties": {
             "typeApp": "zip"
