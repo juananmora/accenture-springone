@@ -1,7 +1,7 @@
 {
   "application": {
     "name": "ESAB_COPRS",
-    "version": "1.0.13",
+    "version": "1.0.15",
     "project": "Sabadell",
     "mode": "PARALLEL",
     "components": {
@@ -13,7 +13,7 @@
           "artifact": {
             "artifactType": "TOMCAT",
             "artifactName": "com.accenture:list",
-            "artifactVersion": "1.0.5",
+            "artifactVersion": "5.0.5",
             "sourceDirectory": "/target",
             "artifactFileName": "accenture-springone.jar",
             "tomcatConfig" : "config1",
@@ -27,25 +27,11 @@
           "artifact": {
             "artifactType": "TOMCAT",
             "artifactName": "com.accenture:client",
-            "artifactVersion": "1.0.6",
+            "artifactVersion": "5.0.6",
             "sourceDirectory": "/target",
             "artifactFileName": "accenture-springone.jar",
             "tomcatConfig" : "config1",
             "contextPath": "myapp"
-          }
-        },
-        {
-          "name": "tomcat2",
-          "description": "Non-master component using Artifact Management",
-          "tier": "AppTier2",
-          "artifact": {
-            "artifactName": "com.accenture:secondaryapp",
-            "artifactVersion": "1.0.1",
-            "sourceDirectory": "/target",
-            "artifactFileName": "accenture-springone.jar"
-          },
-          "properties": {
-            "typeApp": "zip"
           }
         }
       ]
