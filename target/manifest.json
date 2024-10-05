@@ -20,6 +20,16 @@
           }
         },
         {
+          "name": "tomcat",
+          "description": "This is tomcat component",
+          "tier": "COPRS",
+          "artifact": {
+            "artifactType": "TOMCAT",
+            "artifactName": "com.accenture:list",
+            "artifactVersion": "1.0.2"
+          }
+        },
+        {
           "name": "jboss-2",
           "description": "This is tomcat component",
           "tier": "COPRS-2",
