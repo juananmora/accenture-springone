@@ -27,6 +27,7 @@
             "artifactType": "DEFAULT",
             "artifactName": "com.accenture:list",
             "artifactVersion": "2.0.2",
+            "artifactFileName": "accenture-springone.jar",
             "sourceDirectory": "/target",
           }
         },
