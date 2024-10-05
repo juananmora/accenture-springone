@@ -1,13 +1,13 @@
 {
   "application": {
     "name": "ESSAB_CLOUDBEES_CDRO",
-    "version": "9.0.1",
+    "version": "9.0.2",
     "project": "Sabadell",
     "mode": "PARALLEL",
     "components": {
       "component": [
         {
-          "name": "CLOUDBEES-CDRO",
+          "name": "cloudbees-cdro",
           "description": "This is tomcat component",
           "tier": "tomcat",
           "artifact": {
@@ -25,7 +25,7 @@
           }
         },
         {
-          "name": "CLOUDBEES-CDRO-2",
+          "name": "cloudbees-cdro-2",
           "description": "This is tomcat component",
           "tier": "tomcat-2",
           "artifact": {
