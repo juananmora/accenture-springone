@@ -20,7 +20,7 @@
           }
         },
         {
-          "name": "tomcat",
+          "name": "tomcat2",
           "description": "This is tomcat component",
           "tier": "COPRS",
           "artifact": {
