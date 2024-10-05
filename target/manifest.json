@@ -1,7 +1,7 @@
 {
   "application": {
     "name": "ESAB_COPRS",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "project": "Sabadell",
     "mode": "PARALLEL",
     "components": {
@@ -42,7 +42,7 @@
             "artifactName": "com.accenture:secondaryapp",
             "artifactVersion": "1.0.1",
             "sourceDirectory": "/target",
-            "artifactFileName": "accenture-springone.jar",
+            "artifactFileName": "accenture-springone.jar"
           },
           "properties": {
             "typeApp": "zip"
