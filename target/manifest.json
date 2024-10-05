@@ -1,7 +1,7 @@
 {
   "application": {
     "name": "ESAB_COPRS",
-    "version": "1.0.20",
+    "version": "1.0.21",
     "project": "Sabadell",
     "mode": "SERIAL",
     "components": {
@@ -20,11 +20,11 @@
           }
         },
         {
-          "name": "generic",
+          "name": "generic-1",
           "description": "This is tomcat component",
           "tier": "COPRS-3",
           "artifact": {
-            "artifactType": "Generic",
+            "artifactType": "EF-Utilities",
             "artifactName": "com.accenture:list",
             "artifactVersion": "2.0.3",
             "artifactFileName": "accenture-springone.jar",
