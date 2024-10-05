@@ -1,7 +1,7 @@
 {
   "application": {
     "name": "ESAB_COPRS",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "project": "Sabadell",
     "mode": "PARALLEL",
     "components": {
@@ -16,6 +16,7 @@
             "artifactVersion": "1.0.5",
             "sourceDirectory": "/target",
             "artifactFileName": "accenture-springone.jar",
+            "tomcatConfig" : "config1",
             "contextPath": "myapp"
           }
         },
@@ -29,6 +30,7 @@
             "artifactVersion": "1.0.6",
             "sourceDirectory": "/target",
             "artifactFileName": "accenture-springone.jar",
+            "tomcatConfig" : "config1",
             "contextPath": "myapp"
           }
         }
