@@ -1,7 +1,7 @@
 {
   "application": {
     "name": "ESAB_COPRS",
-    "version": "1.0.23",
+    "version": "1.0.24",
     "project": "Sabadell",
     "mode": "PARALLEL",
     "components": {
@@ -21,6 +21,12 @@
             "definitionName": "dirg-batch",
             "type": "repository-generic",
             "repositoryName": "artifactory_binaries_pro",
+            "uri": "/com/bancsabadell/dirg/dirgesfin-explo/24.07.161445/dirgesfin-explo-24.07.161445.zip"
+          },
+          "properties": {
+            "definitionName": "dirg-batch",
+            "repositoryName": "artifactory_binaries_pro",
+            "type": "repository-generic",
             "uri": "/com/bancsabadell/dirg/dirgesfin-explo/24.07.161445/dirgesfin-explo-24.07.161445.zip"
           }
         },
