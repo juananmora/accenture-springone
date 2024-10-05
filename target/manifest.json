@@ -1,7 +1,7 @@
 {
   "application": {
     "name": "ESSAB_CLOUDBEES_CDRO",
-    "version": "9.0.0",
+    "version": "9.0.1",
     "project": "Sabadell",
     "mode": "PARALLEL",
     "components": {
@@ -13,7 +13,7 @@
           "artifact": {
             "artifactType": "TOMCAT",
             "artifactName": "com.accenture:list",
-            "artifactVersion": "9.0.0",
+            "artifactVersion": "9.0.1",
             "sourceDirectory": "/target",
             "artifactFileName": "manifest.json",
             "tomcatConfig" : "config1",
@@ -31,7 +31,7 @@
           "artifact": {
             "artifactType": "TOMCAT",
             "artifactName": "com.accenture:client",
-            "artifactVersion": "9.0.0",
+            "artifactVersion": "9.0.1",
             "sourceDirectory": "/target",
             "artifactFileName": "manifest.json",
             "tomcatConfig" : "config1",
